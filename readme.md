@@ -1,0 +1,32 @@
+### Install
+Manjaro i3 base install. Just copy the files wherever needed
+
+### Default programs
+- ```pikaur``` AUR helper
+- ```sakura``` terminal
+- ```keym``` control mouse with keyboard
+
+### Fonts
+Most powerline fonts don't seem to work with the RGB hinting of my setup, the Hack fonts work:
+
+- copy all fonts to ```/usr/share/fonts/ttf``` 
+- clear and regenerate fonts: ```fc-cache -f -v```
+- confirm installation ```fc-list | grep "Hack"```
+- update ```sakura```
+
+### Backgrounds
+- change with ```nitrogen```
+- point to ```backgrounds``` subfolder
+- use the frost background by default
+
+### GTK theme & icons
+ - download **compatibility** Materia Black Frost GTK theme from: https://www.gnome-look.org/p/1318133/ to ```/tmp``` (get the **compatibility version**, not the GNOME versions)
+ - download the Black Frost Suru icon pack from: https://www.gnome-look.org/p/1333828
+ - ```sudo cp -r /tmp/Material-Black-Frost /usr/share/themes```
+   - also copy the icons also to /usr/share/icons
+ - ```lxappearance``` (change)
+ - ```sudo lxappearance``` (also change)
+ - change font to ```Bitstream Vera Sans Roman```
+
+### License
+These dotfiles are MIT licensed
