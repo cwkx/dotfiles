@@ -1,5 +1,5 @@
 ### Install
-Manjaro i3 base install. Just copy the files wherever needed
+Manjaro i3 base install. Just copy the files wherever needed. If cloned into a ```~/repos/``` folder like me you should be able to use ```./write.sh``` to install automatically.
 
 ### Default programs
 - ```pikaur``` AUR helper
