@@ -17,7 +17,6 @@ Most powerline fonts don't seem to work with the RGB hinting of my setup, the Ha
 
 ### Microsoft Fonts and Office
 - ```pikaur -S ttf-ms-fonts```
-- ```pikaur -S ttf-vista-fonts```
 - ```pikaur -S onlyoffice-bin``` (go make coffee)
 
 ### Backgrounds
