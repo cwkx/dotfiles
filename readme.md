@@ -5,14 +5,20 @@ Manjaro i3 base install. Just copy the files wherever needed. If cloned into a `
 - ```pikaur``` AUR helper
 - ```sakura``` terminal
 - ```keym``` control mouse with keyboard
+- ```firefox``` need to enable compact mode in about:config then in customize toolbar
 
-### Fonts
+### Console Fonts
 Most powerline fonts don't seem to work with the RGB hinting of my setup, the Hack fonts work:
 
 - copy all fonts to ```/usr/share/fonts/ttf``` 
 - clear and regenerate fonts: ```fc-cache -f -v```
 - confirm installation ```fc-list | grep "Hack"```
 - update ```sakura```
+
+### Microsoft Fonts and Office
+- ```pikaur -S ttf-ms-fonts```
+- ```pikaur -S ttf-vista-fonts```
+- ```pikaur -S onlyoffice-bin``` (go make coffee)
 
 ### Backgrounds
 - change with ```nitrogen```
