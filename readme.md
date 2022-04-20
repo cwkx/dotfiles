@@ -6,6 +6,7 @@ Manjaro i3 base install. Just copy the files wherever needed. If cloned into a `
 - ``sakura`` terminal
 - ``keym`` control mouse with keyboard
 - ``firefox`` need to enable compact mode in about:config then in customize toolbar
+- ``pulseaudio`` type in the ``install_pulse`` to run the Manjaro install script at the beginning. For me it's better at managing the USB devices changing the device order.
 
 ### Console Fonts
 Most powerline fonts don't seem to work with the RGB hinting of my setup, the Hack fonts work:
