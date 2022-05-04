@@ -4,13 +4,15 @@ Manjaro i3 base install. Just copy the files wherever needed, for example clone 
 ### Default programs
 - ``vim`` editor (vanilla)
 - ``pikaur`` AUR helper
-- ``sakura`` terminal
+- ``sakura`` terminal (#1e1e1e background)
 - ``keym`` control mouse with keyboard (see my public github repo)
 - ``firefox`` need to enable compact mode in about:config then in customize toolbar
-- ``pulseaudio`` type in the ``install_pulse`` to run the Manjaro install script at the beginning. For me it's better at managing the USB devices changing the device order.
+- ``pulseaudio`` type in the ``install_pulse`` to run the Manjaro install script at the beginning. For me it's better at managing the USB devices changing the device order. Note (2022), I had to install pa-applet-git and modify the install_pulse script.
 - ``frescobaldi`` LilyPond music editor
+- ``pinta`` for image editing ``gcolor2`` for colour picking
 - ``zim`` for writing books/notes/ideas/research/wiki
 - ``code`` for programming
+- ``texlive-most`` and ``biber`` for LaTeX
 
 ### Console Fonts
 Most powerline fonts don't seem to work with the RGB hinting of my setup, the Hack fonts work:
