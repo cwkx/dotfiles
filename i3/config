@@ -8,20 +8,20 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
-default_floating_border normal
+default_border pixel 3
+default_floating_border pixel 3
 
 # Hide borders
 hide_edge_borders none
 
 # change borders
 bindsym $mod+u border none
-bindsym $mod+y border pixel 1
+bindsym $mod+y border pixel 3
 bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft:URWGothic-Book 11
+font xft:Gothic-Book 13
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -145,14 +145,14 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1: cmd
-set $ws2 2: code
-set $ws3 3: web
-set $ws4 4: misc
-set $ws5 5: rest
-set $ws6 6: todo
-set $ws7 7: text
-set $ws8 8: lab
+set $ws1 1: 
+set $ws2 2: 
+set $ws3 3: 
+set $ws4 4: 
+set $ws5 5: 
+set $ws6 6: 
+set $ws7 7: 
+set $ws8 8: 
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -226,7 +226,7 @@ for_window [class="zoom" title="Zoom Meeting"] floating disable
 for_window [urgent=latest] focus
 
 # reload the configuration file
-# bindsym $mod+Shift+c reload
+bindsym $mod+Shift+n reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -356,9 +356,9 @@ bar {
 # hide/unhide i3status bar
 bindsym $mod+Shift+m bar mode toggle
 
-# Theme colors
+# Theme colors #FDF6E3
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #4D6571 #4D6571 #80C7FF #FDF6E3
+  client.focused          #4D6571 #4D6571 #80C7FF #8E919C
   client.focused_inactive #444444 #444444 #BCBCBC #454948
   client.unfocused        #444444 #444444 #BCBCBC #454948
   client.urgent           #CB4B16 #FDF6E3 #BCBCBC #268BD2
@@ -371,8 +371,8 @@ bindsym $mod+Shift+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
-gaps outer -2
+gaps inner 6
+gaps outer -1
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
@@ -384,7 +384,7 @@ gaps outer -2
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+# smart_borders off
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner
