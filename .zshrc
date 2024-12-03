@@ -3,7 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 alias pad='code --new-window --disable-extensions'
 cpuwatch() { watch -n 1 "ps -C \"$1\" -o %cpu=,%mem= | awk '{printf \"CPU: %.1f%%  MEM: %.1f%%\\n\", \$1, \$2}'"; }
-gpuwatch() { watch -n 1 "nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader"; }
+gpuwatch() { watch -n 1 "nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader | awk -F ',' '{gsub(/ /, \"\", \$1); printf \"GPU: %s %s %s\\n\", \$1, \$2, \$3}'"; }
 
 zstyle ':omz:update' mode disabled
 
