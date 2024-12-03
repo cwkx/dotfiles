@@ -4,6 +4,7 @@ cp .Xresources ~/.Xresources
 cp .zshrc ~/.zshrc
 cp .dmenurc ~/.dmenurc
 cp .dir_colors ~/.dir_colors
+cp dunstrc ~/.config/dunst/dunstrc
 cp .user-dirs.dirs ~/.config/user-dirs.dirs
 cp i3/config ~/.i3/config
 cp i3/i3-scrot.conf ~/.config/i3-scrot.conf
